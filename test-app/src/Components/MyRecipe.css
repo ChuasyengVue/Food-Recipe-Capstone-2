@@ -1,0 +1,54 @@
+/* MyRecipe.css */
+.my-recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e0f7fa, #00796b); /* Gradient background */
+    padding: 2rem;
+}
+
+.my-recipe-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff; 
+}
+
+.recipe-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1.5rem; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    width: 300px; 
+    transition: transform 0.2s ease; 
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px); 
+}
+
+.recipe-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00796b; 
+}
+
+.recipe-card p {
+    margin: 0.5rem 0; 
+    color: #555;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto; 
+    border-radius: 5px; 
+}

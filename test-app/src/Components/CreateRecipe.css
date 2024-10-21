@@ -1,0 +1,73 @@
+/* CreateRecipeAlt.css */
+.create-recipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eaeaea; /* Light gray background */
+}
+
+.create-recipe-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px; /* Limit the width for better aesthetics */
+    text-align: left; /* Align text to the left */
+}
+
+.create-recipe-form h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem; /* Larger font size for the title */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center the title */
+}
+
+.create-recipe-form div {
+    margin-bottom: 1.5rem; /* Space between form elements */
+}
+
+.create-recipe-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold; /* Make labels bold */
+    color: #555; /* Darker color for labels */
+}
+
+.create-recipe-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-recipe-form input:focus {
+    border-color: #3a8dfe; 
+    box-shadow: 0 0 5px rgba(58, 141, 254, 0.5);
+    outline: none;
+}
+
+.create-recipe-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #3a8dfe; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.create-recipe-form button:hover {
+    background-color: #2a6ab3; 
+    transform: translateY(-2px); 
+}
+
+.create-recipe-form button:disabled {
+    background-color: #b0c4de; 
+    cursor: not-allowed; 
+}

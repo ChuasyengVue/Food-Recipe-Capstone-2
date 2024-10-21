@@ -1,0 +1,56 @@
+/* Ensure the video covers the entire page */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.app-container {
+    position: relative;
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
+}
+
+.header {
+    position: relative;
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Ensures video doesn't overflow */
+}
+
+.header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+    object-position: center;
+    opacity: 0.5; 
+    z-index: 0; 
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+    font-size: 2em; 
+    z-index: 1; 
+}
+
+.welcome-message {
+    position: absolute;
+    bottom: 20px; 
+    width: 100%;
+    text-align: center;
+    z-index: 1; 
+}
+
+.welcome-message h1, .welcome-message h2 {
+    color: white; 
+    font-size: 1.5em;
+}

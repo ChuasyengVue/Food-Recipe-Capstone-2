@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #f8f9fa; 
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+}
+
+.navbar-home {
+    color: #f4bb3a; 
+    font-size: 1.5rem; 
+    text-decoration: none;
+    
+    display: flex;
+    &:hover {
+        color: #ed7b32; 
+    }
+}
+
+.find-recipes-link {
+    margin-right: 1300px; 
+}
+
+/* Styles for user navigation links */
+.user-nav {
+    display: flex;
+    align-items: center;
+    margin:0px;
+}
+
+.user-nav .nav-link {
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: #007bff;
+}
+
+.user-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none; 
+    color: #007bff; 
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-item{
+    color: gray;
+    margin: 10px;
+    text-decoration: none;
+    padding: 1px;
+}
