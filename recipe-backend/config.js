@@ -7,7 +7,7 @@ require("colors");
 
 const SECRET_KEY = process.env.SECRET_KEY || "recipe-secretKey";
 const RENDER_API_KEY = process.env.RENDER_API_KEY;
-const PORT = +process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 // Use dev database, testing database, or via env var, prodcution database
 function getDatabaseUri() {
