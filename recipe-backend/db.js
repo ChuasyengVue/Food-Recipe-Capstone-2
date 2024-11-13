@@ -7,7 +7,6 @@ const { getDatabaseUri } = require("./config");
 let db;
 
 if(process.env.NODE_ENV === 'production') {
-    console.log("Using Production Database URL:", process.env.DATABASE_URL)
     db = new Client ({
         connectionString: process.env.DATABASE_URL,
         ssl: {

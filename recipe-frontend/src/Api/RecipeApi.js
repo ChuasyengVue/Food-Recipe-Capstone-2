@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://food-recipe-capstone-2.onrender.com/api";
 
 class RecipeApi {
 
