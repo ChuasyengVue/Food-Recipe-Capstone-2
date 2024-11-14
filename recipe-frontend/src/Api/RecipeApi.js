@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const BASE_URL = "https://food-recipe-capstone-2.onrender.com/api";
+const BASE_URL = process.env.NODE_ENV === 'production' 
+  ? process.env.RENDER_URL 
+  : process.env.LOCAL_URL;
+
 
 class RecipeApi {
 
