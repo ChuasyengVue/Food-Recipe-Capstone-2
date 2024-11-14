@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = process.env.NODE_ENV === 'production' 
-  ? process.env.RENDER_URL 
-  : process.env.LOCAL_URL;
+const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:5000/api";
+
 
 
 class RecipeApi {
