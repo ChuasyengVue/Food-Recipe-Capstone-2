@@ -16,7 +16,10 @@ const morgan = require("morgan");
 const app = express();
 
 app.use(express.json());
-app.use(cors({origin: 'https://food-recipe-frontend-capstone-2.onrender.com'}));
+app.use(cors({  origin: 'https://food-recipe-frontend-capstone-2.onrender.com',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true}));
 app.use(morgan("tiny"));
 
 
